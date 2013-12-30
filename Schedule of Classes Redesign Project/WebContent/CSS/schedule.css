@@ -1,0 +1,98 @@
+/*
+Name: John Tan 
+Date: 11/23/2013
+*/
+
+/* CSS Document */
+
+/* elements */
+address, blockquote, body, caption, center, dd, dir, div, dl, dt, form, h1, h2, h3, h4, h5, h6, menu, ol, p, td, th, ul  {
+	font-family:Arial, Helvetica, sans-serif;	
+	}
+table {
+	border-collapse: collapse;
+}
+
+
+a:link {						
+	color: #FFFFFF;
+	text-decoration: underline;
+	}
+a:visited {								
+	color: #003366;
+	text-decoration: underline;
+	}	
+a:hover {									
+	color: #0099CC;  
+	text-decoration: underline;
+	}
+a:active {   							
+	color: #FF0000;  	
+	text-decoration: underline;
+	}	
+
+/* classes */	
+.errormsg {
+	color: #FF0000;
+	font-weight: 600; 
+	}
+
+/* ids */
+#search caption, #results caption, #criteria caption, #details caption {
+	color: #000;
+	padding-bottom: 4px;
+	}
+#search th, #search td, #results th, #results td, #criteria th, #criteria td, #details th, #details td {
+	padding: 3px 2px;
+	border: 1px solid #999;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	}
+#search th, #search td {
+	padding: 4px 4px;
+	vertical-align: top;
+	}
+#details th, #details td {
+	padding: 4px 2px;
+	vertical-align: top;
+	}	
+#search th, #results th, #criteria th, #details th {
+	background: #ccc;
+	}
+#search th, #details th {
+	text-align: right;
+	}	
+#results td {
+	text-align: center;
+	}
+#search td, #criteria td, #details td {
+	text-align: left;
+	}
+
+/*Make adjustments for the unordered list, the BIO 1003 button, to the following properties. */
+ul#nav{
+	list-style: none;
+	padding: 0;
+	margin:0 0 10px 0;
+}
+
+
+/*----------------Form Validation-------------------------*/
+.red {  /* for error messages */
+   color: red;
+}
+ 
+input.error {  /* for the error input text fields */
+   border: 1px red inset;
+   padding: 2px;
+}
+ 
+table {
+   border: 0;
+}
+ 
+td {
+   margin: 0;
+   border: 1px solid #FFFFFF;
+   padding: 3px 10px 3px 3px;
+}
