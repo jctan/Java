@@ -1,8 +1,5 @@
 /*
-Name: John Tan 
-Assignment #1 (Java Basic) - Make Change
-CIS 4160
-Date: 9/27/2013
+
 
 FEATURES: 1. GUI (Swing & AWT) - the user inputs the total amount on the GUI and it makes the change on the GUI with making random colors when clicking 
 			on the "Make change" button
@@ -19,11 +16,7 @@ import java.awt.event.*;
 public class MakeChange extends JFrame {
 
 	
-/*
-Name: John Tan 
-Assignment #2 - Java OOP 
-Date: 9/27/2013
-*/
+
 
 		
 /*These methods are called from ChangeRevolver.java */
