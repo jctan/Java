@@ -27,14 +27,14 @@ public class Main {
 		
 		
 		Danny.setLeftChopstick(c3);
-		Danny.setRightChopstick(c1);
+		Danny.setRightChopstick(c4);
 		
 		
-		Wendy.setLeftChopstick(c3);
-		Wendy.setRightChopstick(c4);
+		Wendy.setLeftChopstick(c4);
+		Wendy.setRightChopstick(c5);
 		
-		Winston.setLeftChopstick(c4);
-		Winston.setRightChopstick(c5);
+		Winston.setLeftChopstick(c5);
+		Winston.setRightChopstick(c1);
 		
 		
 		John.start();
