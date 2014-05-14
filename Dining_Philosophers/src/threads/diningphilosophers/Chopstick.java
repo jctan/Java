@@ -7,6 +7,7 @@ public class Chopstick {
 	
 	private Philosopher reservedBy; 
 	private Philosopher grabbedBy;
+	
 
 	//pick up chopstick (only one thread pick up one at a time)
 	public synchronized void grab(Philosopher philosopher) {
@@ -23,9 +24,11 @@ public class Chopstick {
 		}
 		
 	}
+	
+	
 
 	//prevent from deadlock 
-	private synchronized void reserve(Philosopher philosopher) {
+	public synchronized void reserve(Philosopher philosopher) {
 		
 		this.reservedBy = philosopher; 
 		
@@ -37,9 +40,9 @@ public class Chopstick {
 			e.printStackTrace();
 		}
 		
-		this.reservedBy = null;
-		
-		this.grab(philosopher);
+		if(this.reservedBy == null){
+			this.grab(philosopher);
+		};
 		
 	}
 	

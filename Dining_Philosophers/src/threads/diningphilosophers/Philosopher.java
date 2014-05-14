@@ -27,25 +27,31 @@ public class Philosopher extends Thread{
 	
 	public void run(){
 		
-		//while(true){
 			//not hungry - waiting
 			Logger.printOut(getName() + " is waiting.");
 			waiting();
 			
-			System.out.println("");
+			System.out.println();
 			
 			//hungry - pick up chopstick
 			Logger.printOut(getName() + " is hungry.");
+			
 
 			Logger.printOut(getName() + " grabs left chopstick.");
+			
 			leftChopstick.grab(this);
+			
 	
 			Logger.printOut(getName() + " grabs right chopstick.");
 			rightChopstick.grab(this);
 			
 			//hungry - eating
 			Logger.printOut(getName() + " is eating.");
-			eating();
+			
+			//for(int i = 0; i < 100; i++){
+				eating();
+			//}
+			
 			Logger.printOut(getName() + " finished eating.");
 			
 			//finished eating - release chopstick
@@ -59,15 +65,10 @@ public class Philosopher extends Thread{
 			Logger.printOut(getName() + " WAITED " + getWaitTime() + " Times ");
 			Logger.printOut(getName() + " ATE " + getNumberOfMeals() + " Meals ");
 			
-			System.out.println("");
-
-			
-		//}
+			System.out.println();
 		
 			
 	}
-
-
 
 
 	private void eating(){

@@ -19,14 +19,16 @@ public class Main {
 		Philosopher Winston = new Philosopher("Winston");
 		Chopstick c5 = new Chopstick();
 		
-		John.setLeftChopstick(c5);
-		John.setRightChopstick(c1);
+		John.setLeftChopstick(c1);
+		John.setRightChopstick(c2);
 		
-		Bryan.setLeftChopstick(c1);
-		Bryan.setRightChopstick(c2);
-
-		Danny.setLeftChopstick(c2);
-		Danny.setRightChopstick(c3);
+		Bryan.setLeftChopstick(c2);
+		Bryan.setRightChopstick(c3);
+		
+		
+		Danny.setLeftChopstick(c3);
+		Danny.setRightChopstick(c1);
+		
 		
 		Wendy.setLeftChopstick(c3);
 		Wendy.setRightChopstick(c4);
@@ -34,11 +36,13 @@ public class Main {
 		Winston.setLeftChopstick(c4);
 		Winston.setRightChopstick(c5);
 		
+		
 		John.start();
 		Bryan.start();
 		Danny.start();
 		Wendy.start();
 		Winston.start();
+	
 
 	}
 
