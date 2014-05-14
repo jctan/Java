@@ -1,3 +1,4 @@
+]
 /*
  Name: John Tan
  Course: CIS 4110, Section LMSA
